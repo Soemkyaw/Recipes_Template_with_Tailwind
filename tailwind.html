@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Testing</title>
+</head>
+<body class=" text-gray-600 font-mono">
+    <div class="md:grid md:grid-cols-5 h-screen">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="">
+                <div class="flex justify-between items-center border-b border-gray-100">
+                    <h1 class=" font-bold uppercase p-4 ">
+                        <a href="" class=" hover:text-gray-800">Soe Food</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 font-bold">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+                </div>
+                <ul class=" text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold text-end py-1">
+                        <a href="" class="flex justify-end pr-2 border-r-4 border-red-400">
+                            <span>Home</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-5 h-6 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="text-end py-1">
+                        <a href="" class="flex justify-end pr-2 border-r-4 border-white">
+                            <span>About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-5 h-6 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="text-end py-1" >
+                        <a href="" class="flex justify-end pr-2 border-r-4 border-white">
+                            <span>Contact</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-5 h-6 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- nav end  -->
+        <main class="px-16 py-6 bg-gray-100 md:col-span-4 ">
+            <div class="flex justify-center md:justify-end my-2">
+                <a href=""
+                    class=" rounded-full border-red-400 border-2 py-2 px-3 uppercase cursor-pointer text-xs tracking-winder text-red-400 hover:bg-red-400 hover:text-white">Log
+                    in</a>
+                <a href=""
+                    class=" rounded-full border-red-400 border-2 py-2 px-3 uppercase cursor-pointer text-xs tracking-winder text-red-400 hover:bg-red-400 hover:text-white ml-3">Sign
+                    up</a>
+            </div>
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+                <h3 class=" text-2xl font-semibold">For humanity</h3>
+            </header>
+            <div class="">
+                <h4 class="font-bold mt-12 pb-2 border-b border-green-400">Latest Recipes</h4>
+        
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class=" mt-8 bg-white rounded-md overflow-hidden shadow-md relative hover:shadow-xl">
+                        <!-- card go here  -->
+                        <div class="">
+                            <img src="./image/stake.jpg" alt="Stake" class="w-full h-32 sm:h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <span class="font-bold">Stake</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Soe</span>
+                        </div>
+                        <div
+                            class=" bg-gray-100 text-gray-400 text-xs font-bold uppercase rounded-full ml-2 mt-2 p-2 absolute top-0">
+                            <span>25 Mins</span>
+                        </div>
+                    </div>
+                    <div class=" mt-8 bg-white rounded-md overflow-hidden shadow-md relative hover:shadow-xl">
+                        <!-- card go here  -->
+                        <div class="">
+                            <img src="./image/pizza.jpg" alt="Stake" class="w-full h-32 sm:h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <span class="font-bold">Pizza</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Soe</span>
+                        </div>
+                        <div
+                            class=" bg-gray-100 text-gray-400 text-xs font-bold uppercase rounded-full ml-2 mt-2 p-2 absolute top-0">
+                            <span>25 Mins</span>
+                        </div>
+                    </div>
+                    <div class=" mt-8 bg-white rounded-sm overflow-hidden shadow-md relative hover:shadow-xl">
+                        <!-- card go here  -->
+                        <div class="">
+                            <img src="./image/pasta.jpg" alt="Stake" class="w-full h-32 sm:h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <span class="font-bold">Pasta</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Soe</span>
+                        </div>
+                        <div
+                            class=" bg-gray-100 text-gray-400 text-xs font-bold uppercase rounded-full ml-2 mt-2 p-2 absolute top-0">
+                            <span>25 Mins</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <h4 class="font-bold mt-12 pb-2 border-b border-green-400">Most Recipes</h4>
+                <div class=" mt-8">
+                    <!-- card go here  -->
+                </div>
+        
+                <div class=" flex justify-center">
+                    <div class="rounded-full border-gray-400 border-2 py-2 px-3 uppercase cursor-pointer text-xs tracking-winder hover:bg-gray-400 hover:text-white">Load More</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    burger.addEventListener('click',()=>{
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden')
+        }else{
+            menu.classList.add('hidden')
+        }
+    })
+
+</script>
+</html>
